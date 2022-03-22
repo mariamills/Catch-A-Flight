@@ -21,11 +21,6 @@
     text-decoration: none;
 }
 
-body{
-    height: 100vh;
-}
-
-
 .navbar{
     background: var(--bg);
 }
@@ -84,7 +79,7 @@ body{
     top: 50px;
     width: 300px;
     height: 100px;
-    animation: hover 15s infinite linear;
+    animation: hover 20s infinite linear;
 }
 
 .cloud::before{
@@ -130,13 +125,13 @@ body{
         transform: translateY(0%);
     }
     25%{
-        transform: translateY(20%);
+        transform: translateY(25%);
     }
     50%{
         transform: translateY(0%);
     }
     75%{
-        transform: translateY(20%);
+        transform: translateY(25%);
     }
     100%{
         transform: translateY(0%);
