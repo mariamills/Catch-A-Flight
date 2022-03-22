@@ -1,0 +1,128 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;800&display=swap');
+
+:root{
+    --purple: #6640A2;
+    --pink: #ECBCFF;
+    --green: #3BBEAA;
+    --white: #fff;
+    --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0 ,0, 0.1);
+    --bg: linear-gradient(to right, var(--purple), var(--pink));
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+}
+
+
+.navbar{
+    background: var(--bg);
+}
+
+#home{
+    background: var(--purple);
+}
+
+.btn-book{
+    border-radius: 1rem;
+    background-color: var(--green);
+}
+
+.btn-book:hover{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.500);
+}
+
+.btn-form:hover,
+.btn-book:focus{
+    border-radius: 1rem;
+    background-color: var(--purple);
+    color: var(--white) !important;
+}
+
+#home .container-md{
+    background-color: #fff;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(116% + 1.3px);
+    height: 268px;
+}
+
+.wave .shape-fill {
+    fill: #6640A2;
+}
+
+.cloud{
+    position: relative;
+    background: var(--white);
+    border-radius: 1000px;
+}
+
+.cloud.one{
+    top: 50px;
+    width: 300px;
+    height: 100px;
+    animation: hover 10s infinite linear;
+}
+
+.cloud::before{
+    content: '';
+    position: absolute;
+    top: -80%;
+    left: 10%;
+    width: 50%;
+    height: 150%;
+    background: var(--white);
+    border-radius: 50%;
+}
+
+.cloud::after{
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: 20%;
+    width: 30%;
+    height: 100%;
+    background: var(--white);
+    border-radius: 50%;
+}
+
+@keyframes hover{
+    0%{
+        transform: translateY(0%);
+    }
+    25%{
+        transform: translateY(20%);
+    }
+    50%{
+        transform: translateY(0%);
+    }
+    75%{
+        transform: translateY(20%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
